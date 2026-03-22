@@ -1,0 +1,198 @@
+body{
+    background-color: rgb(220, 226, 224);
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; /* по горизонталі */
+    align-items: center;     /* по вертикалі */
+}
+.bg-pattern-top{
+    position: absolute;
+    overflow: hidden;
+    top: -45px;
+    left: -50px;
+    z-index: -1;
+}
+.bg-pattern-bottom{
+    position: absolute;
+    overflow: hidden;
+    width: 1000px;
+    bottom: -30px;
+    right: -100px;
+    z-index: -1;
+}
+.container{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 1;
+    overflow: hidden;
+
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 95px;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/*FONTS*/
+h1, h2, h3, h4, p{
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+h1, h2{
+    color: hsl(300, 43%, 22%);
+}
+h3, #reviews{
+    color: hsl(300, 24%, 96%);
+}
+#verified_buyer{
+    color: hsl(333, 80%, 67%);
+
+    font-weight: 300;
+    font-size: 14px;
+
+    margin: 0px;
+}
+h1{
+    font-weight: 700;
+    font-size: 42px;
+
+    margin: 0px;
+}
+.description{
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+
+    margin: 0px;
+}
+h2{
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0px;
+}
+h3{
+    font-weight: 700;
+    font-size: 14px;
+
+    margin: 0px;
+}
+#reviews{
+    font-weight: 400;
+    font-size: 12px;
+    word-spacing: 3px;
+    line-height: 120%;
+
+    margin: 0px;
+}
+
+#customers_containers{
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    padding: 34px 24px;
+    gap: 28px;
+
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 8px;
+    /*width: 250px;*/
+    height: 118px;
+}
+#rates_containers{
+    background-color: hsl(300, 24%, 96%);
+    width: 360px;
+    height: 50px;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 24px;
+    gap: 24px;
+}
+
+.title_container{
+    width: 280px;
+}
+.description_cobtainer{
+    width: 310px;
+}
+.top-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 48px;
+}
+.title_and_description{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 24px;
+}
+
+.rates_container{
+    display: grid;
+    grid-template-columns: 34px 34px 1fr;
+    gap: 14px;
+    padding-left: 21px;
+}
+.rate_review_container{
+    grid-column: 1 / 4;
+}
+.rate_report_container {
+    grid-column: 2 / 4;
+}
+.rate_besttech_container {
+    grid-column: 3 / 4;
+}
+
+.bottom_container{
+    display: grid;
+    grid-template-rows: 2px 2px 1fr;
+    row-gap: 12px;
+    column-gap: 18px;
+}
+.customer1_container{
+    grid-row: 1 / 4;
+}
+.customer2_container{
+    grid-row: 2 / 4;
+}
+.customer3_container{
+    grid-row: 3 / 4;
+}
+.title_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#avatars{
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+#images_and_names{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    gap: 12px;
+}
+#name_and_vb{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 4px;
+}
+#review_containers{
+    width: 230px;
+}
